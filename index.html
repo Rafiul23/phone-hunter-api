@@ -18,7 +18,7 @@
 
         <section class="bg-gray-100 p-4 m-4">
             <input id="search-field" type="text" placeholder="Search here ..." class="input input-bordered w-full max-w-xs" />
-            <button onclick="handleSearch()" class="btn btn-accent">Search</button>
+            <button onclick="handleSearch()" class="btn btn-accent ml-2">Search</button>
         </section>
 
         <section>
@@ -33,10 +33,30 @@
                
             </div>
 
-            <div class="text-center hidden mt-4" id="show-all-container">
-                <button class="btn btn-accent">Show All</button>
+            <div class="text-center hidden my-4" id="show-all-container">
+                <button onclick="showAllBtn()" class="btn btn-accent">Show All</button>
             </div>
         </section>
+
+        <!-- modal -->
+        <!-- Open the modal using ID.showModal() method -->
+        
+        <dialog id="show_details_modal" class="modal">
+        <form method="dialog" class="modal-box">
+            
+            <div class="my-4 space-y-2" id="show-details-container">
+                
+            </div>
+
+           
+
+        <div class="modal-action">
+         <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+            </div>
+         </form>
+        </dialog>
+
     </main>
     
 
